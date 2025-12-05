@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Calculadora PoC com Histórico</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="container">
+<section class="calculator">
+<div class="display" id="display">0</div>
+
+
+<div class="buttons" id="buttons">
+
+<button class="btn control" data-action="clear">C</button>
+<button class="btn control" data-action="back">⌫</button>
+<button class="btn control" data-action="percent">%</button>
+<button class="btn op" data-op="/">÷</button>
+
+
+
+<button class="btn num" data-num="7">7</button>
+<button class="btn num" data-num="8">8</button>
+<button class="btn num" data-num="9">9</button>
+<button class="btn op" data-op="*">×</button>
+
+
+
+<button class="btn num" data-num="4">4</button>
+<button class="btn num" data-num="5">5</button>
+<button class="btn num" data-num="6">6</button>
+<button class="btn op" data-op="-">-</button>
+
+<button class="btn num" data-num="1">1</button>
+<button class="btn num" data-num="2">2</button>
+<button class="btn num" data-num="3">3</button>
+<button class="btn op" data-op="+">+</button>
+
+<button class="btn num zero" data-num="0">0</button>
+<button class="btn num" data-num=",">,</button>
+<button class="btn equals" data-action="equals">=</button>
+</div>
+</section>
+
+
+<aside class="history">
+<h2>Histórico</h2>
+<ul id="historyList" class="history-list">
+</ul>
+<div class="hint">Clique em um item para carregar o resultado.</div>
+</aside>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
